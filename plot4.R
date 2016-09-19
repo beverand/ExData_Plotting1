@@ -1,4 +1,4 @@
-#datafile <- "household_power_consumption.txt"
+datafile <- "household_power_consumption.txt"
 
 dat<- fread(datafile, na.strings = c("NA", "N/A", "null", '?'))
 datset<-subset(dat, Date %in% c('2/1/2007','2/2/2007'))
